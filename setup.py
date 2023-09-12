@@ -17,7 +17,7 @@ setup(
     ],
     install_requires=[
         'fastapi==0.68.2',
-        'httptools==0.3.0',
+        'httptools==0.6.0',
         'gunicorn==20.1.0',
     ],
     classifiers=[
