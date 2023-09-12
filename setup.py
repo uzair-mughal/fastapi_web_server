@@ -21,7 +21,6 @@ setup(
         'gunicorn==20.1.0',
         'python-multipart==0.0.5',
         'uvicorn==0.15.0',
-        'uvloop==0.16.0'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
