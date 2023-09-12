@@ -19,6 +19,8 @@ setup(
         'fastapi==0.68.2',
         'httptools==0.6.0',
         'gunicorn==20.1.0',
+        'python-multipart==0.0.5',
+        'uvicorn==0.15.0',
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
