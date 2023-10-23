@@ -1,6 +1,6 @@
-from abc import ABC, abstractmethod
-from fastapi import FastAPI
 from typing import List
+from fastapi import FastAPI
+from abc import ABC, abstractmethod
 from fastapi_web_server.src.middleware import Middleware
 
 
