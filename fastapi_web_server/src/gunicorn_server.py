@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
 from gunicorn.app.base import BaseApplication
 from fastapi_web_server.src.api_doc import ApiDoc
-from fastapi_web_server.src.config import Config
+from fastapi_web_server.src.config import GunicornConfig
 from fastapi_web_server.src.controller import Controller
 from fastapi_web_server.src.exception_handler import ExceptionHandler
 from fastapi_web_server.src.middleware import Middleware
@@ -12,7 +12,7 @@ from fastapi_web_server.src.middleware import Middleware
 class GunicornServer(BaseApplication):
     def __init__(
         self,
-        config: Config = Config(),
+        config: GunicornConfig = GunicornConfig(),
         controllers: List[Controller] = [],
         middlewares: List[Middleware] = [],
         exception_handler: ExceptionHandler = None,
